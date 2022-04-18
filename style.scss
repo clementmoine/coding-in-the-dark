@@ -13,6 +13,7 @@ body, html {
   width: 56px;
   height: 56px;
   display: flex;
+  overflow: hidden;
   list-style: none;
   position: relative;
   border-radius: 50%;
@@ -24,7 +25,7 @@ body, html {
     inset: 0;
     content: '';
     position: absolute;
-    mix-blend-mode: overlay;
+    mix-blend-mode: soft-light;
     background: radial-gradient(93.75% 96.51% at 6.25% 97.32%, #000000 0%, #FFFFFF 100%);
   }
 
@@ -41,7 +42,7 @@ body, html {
     position: relative;
     align-items: center;
     flex-direction: column;
-    transform: translateX(6px); // Petit doute là
+    transform: translateX(4px); // Petit doute là
     transition: transform 200ms ease-in-out;
 
     &-eyes {
@@ -88,10 +89,10 @@ body, html {
     background: #FF603E;
 
     .emoji-face {
-      bottom: -8px;
+      bottom: -12px;
 
       &::before, &::after {
-        top: -4px;
+        top: -6px;
         height: 4px;
         width: 12px;
         content: '';
@@ -117,7 +118,7 @@ body, html {
 
     .emoji-face {
       position: relative;
-      bottom: -4px;
+      bottom: -6px;
     }
   }
 
@@ -132,6 +133,7 @@ body, html {
         border: none;
         border-radius: 0;
         background: #00232B;
+        transform: translateY(4px);
       }
     }
   }
@@ -141,7 +143,7 @@ body, html {
     background: #FFD43E;
     
     .emoji-face {
-      bottom: 4px;
+      bottom: 6px;
 
       &-mouth {
         transform: translateY(-4px) rotate(-45deg);
@@ -154,7 +156,7 @@ body, html {
     background: #FFD43E;
 
     .emoji-face {
-      bottom: 8px;
+      bottom: 12px;
 
       &-mouth {
         width: 0;
